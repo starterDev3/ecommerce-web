@@ -36,17 +36,17 @@ const products = [
     },
             {
         id: 6,
-        name: "M-MINIGAMES!?!?!?",
-        description: "expendable on door 30",
+        name: "that one guy from that one hotel that i forgot the name of",
+        description: "outta my way",
         price: 999999.99,
-        image: "https://i.ytimg.com/vi/DcAfVjyJIB8/maxresdefault.jpg"
+        image: "https://i.ytimg.com/vi/OY14vcG_FdA/sddefault.jpg"
     },
                 {
         id: 7,
-        name: "Product 7",
-        description: "etrhertgrhghtyrj",
-        price: 59.99,
-        image: "/"
+        name: "Random Animatronic",
+        description: "a very old animatronic from a long time ago, it doesn't work anymore but it's still pretty cool to look at. (hopefully not haunted)",
+        price: 4999.99,
+        image: "https://pbs.twimg.com/profile_images/2005602945774084096/kQxUiRgf.jpg"
     },
             {
         id: 8,
