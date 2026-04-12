@@ -7,7 +7,7 @@ import Checkout from './pages/Checkout.jsx'
 import Navbar from './components/Navbar.jsx'
 import Error from './pages/Error.jsx'
 
-function App() {
+export default function App() {
   return (
   
   <div className="app">
@@ -21,5 +21,3 @@ function App() {
   </div>
  );
 }
-
-export default App
