@@ -289,3 +289,12 @@ transition: color 0.3s ease;
   cursor: pointer;
   color: #72ce8d;
 }
+
+.error{
+  color: #ff4d4d;
+  background-color: #ff555552;
+  padding: 0.75rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}

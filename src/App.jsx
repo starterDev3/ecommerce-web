@@ -6,10 +6,11 @@ import Auth from './pages/Auth.jsx'
 import Checkout from './pages/Checkout.jsx'
 import Navbar from './components/Navbar.jsx'
 import Error from './pages/Error.jsx'
+import AuthProvider from './context/AuthContext.jsx'
 
 export default function App() {
   return (
-  
+  <AuthProvider>
   <div className="app">
     <Navbar />
     <Routes>
@@ -19,5 +20,6 @@ export default function App() {
       <Route path="*" element={<Error />} />
     </Routes>
   </div>
+  </AuthProvider>
  );
 }
