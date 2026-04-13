@@ -6,7 +6,7 @@ import ProductCard from "../components/ProductCard";
 export default function Home() {
     const products = Getproducts();
     return (
-        <div className="page">
+        <div className="home-page">
             <div className="home-hero">
                 <h1 className="home-title">HardyShop</h1>
             <p>products products products</p>

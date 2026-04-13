@@ -205,6 +205,12 @@ transition: color 0.3s ease;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.btn-large{
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+}
+
 .btn-cart:hover{
   background-color: #72ce8d;
   color: #fff;
@@ -222,4 +228,64 @@ transition: color 0.3s ease;
   margin-top: 0.5rem;
   text-align: center;
  text-wrap: break-word;
+}
+
+.page{
+  flex: 1;
+  display: flex;
+
+  
+
+  padding: 3rem;
+}
+
+.auth-container{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.auth{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.auth-title{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  color: #18301b;
+  margin-bottom: 1rem;
+}
+
+.auth-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.auth-input{
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.auth-switch{
+  font-size: 0.9rem;
+  color: #636363;
+  margin-top: 1rem;
+}
+
+.auth-link{
+  color: #539467;
+    font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.auth-link:hover{
+  cursor: pointer;
+  color: #72ce8d;
 }
