@@ -30,8 +30,6 @@ navigate("/");
     } else {
 setError(result.error);
     }
-
-    console.log(result);
  }
 
     return (
