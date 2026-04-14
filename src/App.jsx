@@ -8,10 +8,12 @@ import Navbar from './components/Navbar.jsx'
 import Error from './pages/Error.jsx'
 import AuthProvider from './context/AuthContext.jsx'
 import ProductDetails from './pages/ProductDetails.jsx'
+import CartProvider from './context/CartContext.jsx'
 
 export default function App() {
   return (
   <AuthProvider>
+    <CartProvider>
   <div className="app">
     <Navbar />
     <Routes>
@@ -22,6 +24,7 @@ export default function App() {
             <Route path="/products/:id" element={<ProductDetails />} />
     </Routes>
   </div>
+  </CartProvider>
   </AuthProvider>
  );
 }
