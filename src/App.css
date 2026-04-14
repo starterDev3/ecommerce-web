@@ -239,6 +239,66 @@ transition: color 0.3s ease;
   padding: 3rem;
 }
 
+.product-page{
+  max-width: 2500px;
+  margin: 5rem;
+  display: flex;
+  gap: 1rem;
+
+}
+
+.product-container{
+  margin-top: 3rem;
+background-color: #fff;
+  border-radius: 10px;
+  column-count: 2;
+  padding: 2.75rem 5.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+.product-details{
+  font-size: 1.365rem;
+
+}
+
+.product-detail-image{
+width: 500px;
+
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-detail-image-container{
+  flex: 1;
+  display: flex;
+}
+
+.product-detail-info{
+  display: flex;
+flex-direction:column;
+  gap: 1rem;
+}
+
+
+.product-name{
+  font-family: 'Courier New', Courier, monospace;
+    color: #4d7731;
+    font-weight: 4500;
+}
+
+.product-detail-desc{
+  font-size: 0.95rem;
+  color: #636363;
+  margin-top: 0.5rem;
+}
+
+.product-detail-price{
+  font-size: 1.25rem;
+  color: #18301b;
+  font-weight: bold;
+}
+
 .auth-container{
   max-width: 500px;
   margin: 0 auto;
@@ -297,4 +357,10 @@ transition: color 0.3s ease;
   border-radius: 5px;
   font-size: 0.9rem;
   margin-top: 0.5rem;
+}
+
+.nav-greeting{
+  font-size: 0.9rem;
+padding: 0.5rem;
+  color: #ffffff75;
 }

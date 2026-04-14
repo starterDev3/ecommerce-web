@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../context/AuthContext.jsx";
+import { useAuth } from "../context/AuthContext.jsx";
 
 
 export default function Navbar() {
-    const { user, logout } = useContext(AuthContext);
+    const { user, logout } = useAuth();
+    
     return (
         <nav className="navbar">
            <div className="navbar-container">
@@ -30,8 +30,8 @@ export default function Navbar() {
 
     ) : (
         <div className="navbar-auth">
-            <p>Welcome, {user.email}!</p>
-            <button onClick={logout} className="btn btn-secondary">
+            <span className="nav-greeting">Welcome, {user.email}!</span>
+            <button onClick={() => window.confirm("Are you sure you want to log out?") && logout()} className="btn btn-secondary">
                 Logout
             </button>
         </div>

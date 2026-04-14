@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 import { useState } from "react";
 
 export const AuthContext = createContext(null);
@@ -47,4 +47,15 @@ localStorage.removeItem("currentUser");
 return (
 <AuthContext.Provider value={{ signup, user, logout, login }}>{children}</AuthContext.Provider>
 );
+}
+
+
+
+
+
+
+export function useAuth() {
+    const context = useContext(AuthContext);
+
+    return context;
 }

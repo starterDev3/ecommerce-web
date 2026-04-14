@@ -7,6 +7,7 @@ import Checkout from './pages/Checkout.jsx'
 import Navbar from './components/Navbar.jsx'
 import Error from './pages/Error.jsx'
 import AuthProvider from './context/AuthContext.jsx'
+import ProductDetails from './pages/ProductDetails.jsx'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Route path="/auth" element={<Auth />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="*" element={<Error />} />
+            <Route path="/products/:id" element={<ProductDetails />} />
     </Routes>
   </div>
   </AuthProvider>
