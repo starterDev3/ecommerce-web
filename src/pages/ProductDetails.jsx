@@ -2,11 +2,14 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getProductById } from "../data/product.js";
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../context/CartContext.jsx";
 
 export default function ProductDetails() {
 const { id } = useParams();
 const [product, setProduct] = useState(null);
 const navigate = useNavigate();
+   const {addToCart, cartItems } = useCart();
+
 
 
 useEffect(() => {
@@ -23,6 +26,13 @@ if (!foundProduct) {
 if (!product) {
     return <h1>Loading, please wait.</h1>
 }
+    const productInCart = cartItems.find((item) => item.id === product.id);
+
+    const productQuantityLabel = productInCart 
+
+    ? `(${productInCart.quantity})`
+
+     : "";
 
     return (
         <div className="product-page">
@@ -37,7 +47,10 @@ if (!product) {
         <p className="product-detail-price">${product?.price.toFixed(2)}</p>
     <p className="product-detail-desc">{product?.description}</p>
 
-  <button className="btn btn-large btn-primary">Add to Cart</button>
+  <button className="btn btn-large btn-primary" 
+  onClick={() => addToCart(product.id)}>
+    Add to Cart {productQuantityLabel}
+    </button>
 </div>
   
             </div>

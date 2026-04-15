@@ -50,8 +50,8 @@ const products = [
     },
             {
         id: 8,
-        name: "50 mini-fridges that i found in the dumpster behind my apartment",
-        description: "look, i know this is hella expensive, but we're kinda broke right now so I'd REALLY appreciate it if you bought this epic mini-fridge.",
+        name: "one of over 50 mini-fridges that i found in the dumpster behind my apartment",
+        description: "look, i know this is hella expensive, but we're kinda broke right now so I'd REALLY appreciate it if you bought one of these epic mini-fridges",
         price: 999.99,
         image: "https://ewscripps.brightspotcdn.com/dims4/default/bbd04af/2147483647/strip/true/crop/1280x672+0+24/resize/1200x630!/quality/90/?url=https%3A%2F%2Fcf.cdn.uplynk.com%2Fausw%2Fslices%2F1db%2Fef205c0e5ea14d77944cbd6904335118%2F1dbbb8813b894e8792cd456ae92745cf%2Fposter_22565a99219c43139a7e2b9a54f7a8ba.jpg"
     },
@@ -59,7 +59,7 @@ const products = [
         id: 9,
         name: "Product 9",
         description: "n o",
-        price: 3.99,
+        price: 0.01,
         image: "/"
     },
 ];
