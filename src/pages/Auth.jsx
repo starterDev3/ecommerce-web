@@ -36,6 +36,7 @@ setError(result.error);
         <div className="page">
             <div className="auth-container">
                 <div className="auth">
+                    <p className="note">(you dont need to sign up by the way)</p>
                 <h1 className="auth-title">
                     {mode === "signup" ? "Sign Up" : "Login"}
                     </h1>

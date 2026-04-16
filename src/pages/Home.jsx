@@ -9,7 +9,7 @@ export default function Home() {
         <div className="home-page">
             <div className="home-hero">
                 <h1 className="home-title">HardyShop</h1>
-            <p>products products products</p>
+            <p>products products products, also if on mobile, rotate it to landscape mode so the website wouldn't look wonky.</p>
             </div>
             <div className="home-container">
                 <p>Welcome to HardyShop!</p>
