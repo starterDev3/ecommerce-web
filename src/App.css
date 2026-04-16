@@ -378,6 +378,7 @@ margin: 1rem;
 }
 
 .checkout-summary{
+  font-size: 2rem;
     margin-top: 2rem;
 grid-row: 2;
   padding: 15rem;

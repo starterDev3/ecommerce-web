@@ -26,7 +26,7 @@ export default function Checkout() {
   <h1 className="checkout-h1">Checkout</h1>
   <div className="checkout-container">
 <h2 className="order-summary">Order Summary</h2>
-throw away everything you love and say you're sorry without really meaning it
+<p className="note">throw away everything you love and say you're sorry without really meaning it, also nothing happens when you place an order</p>
 {cartItem.map((item) => (
     <div className="checkout-item" key={item.id}>
         <img
